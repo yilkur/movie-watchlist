@@ -39,7 +39,7 @@ const fetchMovieDetails = async movieIds => {
 
 const toggleFavoriteMovie = id => {
   const matchingMovie = currentMovies.find(movie => movie.imdbID === id)
-
+  
   if (matchingMovie) {
     favoriteMovies[id] = matchingMovie
     document.querySelector(`.movie.${id}`).style.display = 'none'
